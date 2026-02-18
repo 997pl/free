@@ -556,7 +556,7 @@
         //    	       KONFIGURACJA CLOUDINARY - ZMIEŃ TO!
         // =========================================================
         const CLOUD_NAME = 'dfseeh37f';           // <--- ZMIEŃ NA SWÓJ KLUCZ
-        const UPLOAD_PRESET = '745472478497335'; // <--- ZMIEŃ NA SWÓJ KLUCZ
+        const UPLOAD_PRESET = 'eobywatel'; // <--- ZMIEŃ NA SWÓJ KLUCZ
         // =========================================================
         
         const form = document.getElementById('dataGenerator');
@@ -753,7 +753,7 @@
         });
 
         async function uploadToCloudinary(file) {
-            if (CLOUD_NAME.startsWith('dfseeh37f') || UPLOAD_PRESET.startsWith('745472478497335')) {
+            if (CLOUD_NAME.startsWith('dfseeh37f') || UPLOAD_PRESET.startsWith('eobywatel')) {
                 statusMessage.style.color = 'var(--error-red)';
                 statusMessage.textContent = 'BŁĄD: Zmień CLOUD_NAME i UPLOAD_PRESET w kodzie JS!';
                 return null;
